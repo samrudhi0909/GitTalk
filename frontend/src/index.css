@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #007bff; /* Blue */
+  --background-color: #ffffff; /* White */
+  --text-color: #333333; /* Dark text for contrast */
+  --input-background: #f8f9fa; /* Light input background */
+  --chat-user-color: #007bff; /* User question color */
+  --chat-assistant-color: #ffffff; /* Assistant answer color */
+  --chat-background: #007bff; /* Chat background color */
+  --chat-window-background: #f1f1f1; /* Light gray for chat background */
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh; /* Full height */
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side, .right-side {
+  padding: 20px;
+  flex: 1;
+  overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.left-side {
+  border-right: 1px solid var(--primary-color); /* Add spacing between sides */
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--input-background);
+  margin-bottom: 10px;
+}
+
+.chat-window {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  height: 100%; /* Full height */
+  overflow-y: auto;
+  background-color: var(--chat-window-background);
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message.user {
+  color: var(--chat-user-color);
+  background-color: var(--chat-background);
+  padding: 8px;
+  border-radius: 5px;
+  align-self: flex-end; /* Align user messages to the right */
+}
+
+.chat-message.assistant {
+  color: var(--chat-assistant-color);
+  background-color: var(--chat-background);
+  padding: 8px;
+  border-radius: 5px;
+  align-self: flex-start; /* Align assistant messages to the left */
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.chat-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.send-icon {
+  width: 30px;
+  height: 30px;
+}

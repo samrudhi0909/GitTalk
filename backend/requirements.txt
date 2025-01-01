@@ -1,0 +1,8 @@
+flask
+flask-cors
+gitpython
+transformers
+sentence-transformers
+faiss-cpu
+torch
+requests
