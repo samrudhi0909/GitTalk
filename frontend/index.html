@@ -1,13 +1,32 @@
-<!doctype html>
+<!-- index.html -->
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>RAG Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Upload Repository -->
+        <div class="left-panel">
+            <h2>Upload GitHub Repository</h2>
+            <input type="text" id="repo-url" placeholder="Enter GitHub repository URL">
+            <button id="upload-btn">Upload</button>
+        </div>
+        <!-- Right Side: Chatbot Interface -->
+        <div class="right-panel">
+            <div id="chat-window">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <img src="chatbot-icon.png" alt="Bot" class="chatbot-icon">
+                <input type="text" id="user-input" placeholder="Type your message here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
