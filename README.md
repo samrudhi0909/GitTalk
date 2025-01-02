@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project implements a model for generating embeddings from documents using the `SentenceTransformer` library and creates a FAISS index for efficient similarity search. The codebase is designed to facilitate the integration of natural language processing (NLP) tasks with efficient vector search capabilities.
+Gittalk implements a model for generating embeddings from repositories using the `SentenceTransformer` library and creates a FAISS index for efficient similarity search. The codebase is designed to facilitate the integration of natural language processing (NLP) tasks with efficient vector search capabilities.
 
 ## Features
 
-- Generate embeddings for a list of documents using a pre-trained SentenceTransformer model.
+- Generate embeddings for a github repo using a pre-trained SentenceTransformer model.
 - Create a FAISS index for fast nearest neighbor search on the generated embeddings.
 - Support for batch processing of documents to optimize performance.
 
@@ -16,7 +16,7 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/samrudhi0909/GitTalk.git
    cd your-repo
    ```
 
@@ -33,6 +33,4 @@ To set up the project, follow these steps:
 
 ## Usage
 
-### Generating Embeddings
-
-To generate embeddings from a list of documents, use the `generate_embeddings` function:
+Enter your github URL and ask any questions about it in the chat window.
