@@ -2,7 +2,7 @@
 
 ## Overview
 
-Gittalk implements a model for generating embeddings from repositories using the `SentenceTransformer` library and creates a FAISS index for efficient similarity search. The codebase is designed to facilitate the integration of natural language processing (NLP) tasks with efficient vector search capabilities.
+Gittalk implements a model for generating embeddings from repositories using the `SentenceTransformer` library and creates a Vectore store index in Pinecone for efficient similarity search. The codebase is designed to facilitate the integration of natural language processing (NLP) tasks with efficient vector search capabilities.
 
 ## Features
 
