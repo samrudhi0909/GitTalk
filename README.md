@@ -130,9 +130,6 @@ The app processes files with the following extensions:
 - `sentence-transformers`
 - `google-generativeai`
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
